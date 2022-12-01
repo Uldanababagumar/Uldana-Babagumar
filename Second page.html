@@ -1,0 +1,208 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Second animation</title>
+<h1>My second animation
+<style>
+    h1 {
+        color: white;
+        font-size: 100px;
+
+    }
+</style>
+<nav>
+    <ul>
+        <li>
+            <a href="First page.html">1st animation<a>
+        </li>
+        <li>
+            <a href="Second page.html">2nd animation<a>
+        </li>
+        <li>
+            <a href="Third page.html">3rd animation<a>
+        </li>
+    </ul>
+
+    <style>
+        nav {
+    width: 100%;
+    background-color: white;
+    margin-top: none;
+    height: 150px;
+    }
+        li{
+    text-decoration: none;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 100px;
+    position: relative;
+    float:  center;
+    }
+        ul{
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-left: 1000px;
+    }
+
+        a{
+    text-decoration: 0;
+    color: black;
+    padding:  2vw;
+    font-family: roboto;
+    margin-top: none;
+    text-indent:500px;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    }
+        }
+    </style>
+</nav>
+<h2 style="color: ghostwhite;">My second animation</h2>
+</head>
+<body>
+    <div id="dvd">
+        
+        <style>
+            h2 {
+                color: black;
+            }
+            body {
+                background-color: black;
+            }
+            #dvd {
+                background-color: black;
+                width: 300px;
+                height: 300px;
+                position: relative;
+                
+                border-radius: 100% 0%;
+                
+                animation-name: dvd_move;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes dvd_move{
+    0%{
+      transform:translate(0px,0px);
+      transition-duration: 1s;
+      background: black;
+      }
+    15%{
+       transform:translate(500px,-100px);
+       transition-duration: 3s;
+       background: red;
+      }
+    30%{
+       transform:translate(1000px,2100px);  
+       transition-duration: 3s;
+       background: orange;
+      }
+     45%{
+       transform:translate(2000px,-100px);
+       transition-duration: 3s;
+       background: yellow;
+        }
+    65% {
+        transform:translate(3500px,2100px);
+        transition-duration: 3s;
+        background: green;
+    }
+    70% {
+        transform:translate(5800px,-100px);
+        transition-duration: 3s;
+        background: blue;
+    }
+    80% {
+        transform:translate(5800px,2100px);
+        transition-duration: 3s;
+        background: darkblue;
+    }
+    85% {
+        transform:translate(3600px,-100px);
+        transition-duration: 3s;
+        background: purple;
+    }
+    90% {
+        transform:translate(1000px,2100px);
+        transition-duration: 3s;
+
+    }
+   100%{
+      transform:translate(0px,0px);
+      background: black;
+      
+      }   
+   }
+
+        </style>
+    </div>
+
+    <div id="dvd2">
+        
+        <style>
+            h2 {
+                color: black;
+            }
+            body {
+                background-color: black;
+            }
+            #dvd2 {
+                background-color: black;
+                width: 400px;
+                height: 400px;
+                position: relative;
+                
+                border-radius: 100% 0%;
+                
+                animation-name: dvd2_move;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes dvd2_move{
+    0%{
+      transform:translate(0px,0px);
+      transition-duration: 1s;
+      background: black;
+      }
+    
+    30%{
+       transform:translate(1000px,2000px);  
+       transition-duration: 3s;
+       background: orange;
+      }
+    
+    65% {
+        transform:translate(3500px,-100px);
+        transition-duration: 3s;
+        background: green;
+    }
+    
+    70% {
+        transform:translate(5600px,1800px);
+        transition-duration: 3s;
+        background: darkblue;
+    }
+    
+    90% {
+        transform:translate(1000px,2000px);
+        transition-duration: 3s;
+
+    }
+   100%{
+      transform:translate(0px,0px);
+      background: black;
+      
+      }   
+   }
+
+        </style>
+    </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>First animation</title>
+<nav>
+	<ul>
+		<li>
+			<a href="First page.html">1st animation<a>
+		</li>
+		<li>
+			<a href="Second page.html">2nd animation<a>
+		</li>
+		<li>
+			<a href="Third page.html">3rd animation<a>
+		</li>
+	</ul>
+
+	<style>
+		nav {
+	width: 100%;
+	background-color: white;
+	margin-top: none;
+	height: 150px;
+    }
+	    li{
+	text-decoration: none;
+	margin: 0;
+	list-style-type: none;
+	margin-top: 30px;
+	margin-left: 100px;
+    position: relative;
+	float:  center;
+    }
+        ul{
+	display: flex;
+	position: relative;
+	text-align: center;
+	margin-left: 1000px;
+    }
+
+        a{
+	text-decoration: 0;
+	color: black;
+	padding:  2vw;
+	font-family: roboto;
+	margin-top: none;
+	text-indent:500px;
+	text-align: center;
+	position: relative;
+	font-size: 50px;
+    }
+		}
+	</style>
+</nav>
+<h1>My first animation
+<style>
+	h1 {
+		color: white;
+		font-size: 100px;
+
+	}
+</style>
+</h1>
+</head>
+<body>
+	<div id="sun" >
+        <style>
+            body{
+                background-image: url(https://cdn.wallpapersafari.com/22/12/jWf63F.jpg);
+                background-size: cover;
+            }
+            
+            #sun {
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/Solarsystemscope_texture_8k_sun.jpg);
+                width: 700px;
+                height: 700px;
+                position: relative;
+                margin-top: 600px;
+                margin-left: 2700px;
+                border-radius: 50%;
+                box-shadow: 2px 0.5px 0.5px 2px;
+                animation-name: sun_rotate;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes sun_rotate {
+                0% { 
+                	background-position: 0px; 
+                }
+                
+                100% { 
+                	background-position: 300px; 
+                }
+            }
+
+            
+            }
+        </style>
+    </div>
+    <div id="earth">
+        <style>
+            #earth {
+                background-image: url(https://web.cortland.edu/flteach/civ/davidweb/images/fullmapb.jpg);
+                width: 200px;
+                height: 200px;
+                position: relative;
+                margin: 0px auto;
+                margin-top: -400px;
+                border-radius: 50%;
+                box-shadow: 2px 0.5px 0.5px 2px;
+                animation-name: earth_scale,earth_rotate,earth_move;
+                animation-duration: 3s,3s,3s;
+                animation-iteration-count: infinite,infinite,infinite;
+                animation-timing-function: linear,linear,ease-in-out;
+                }
+            
+            
+            
+            
+            @keyframes earth_scale {
+                0%  { 
+                    transform: scale(1);   
+                }
+                10% { 
+                    transform: scale(1.2);
+                    
+                }
+                20% { 
+                    transform: scale(1.5); 
+                     
+                }
+                30% { 
+                    transform: scale(2);
+                    
+                }
+                animation-timing-function:  ease-in-out;
+                40% {
+
+                    transform: scale(1.5);  
+                }  
+                50% { 
+                    transform: scale(1.2); 
+                }
+                60%{ 
+                    transform: scale(1); 
+                }
+                70%{ 
+                    transform: scale(0.75); 
+                }
+                80%{ 
+                    transform: scale(0.5); 
+                }
+                animation-timing-function:  ease-in-out;
+                90%{ 
+                    transform: scale(0.75); 
+                }
+                100%{ 
+                    transform: scale(1); 
+                }
+            }
+ 
+            @keyframes earth_rotate {
+                0% { 
+                	background-position: 0px; 
+                }
+                
+                100% { 
+                	background-position: 300px; 
+                }
+            }
+
+            @keyframes earth_move {
+            	0% {
+            		left: 500px;
+            	}
+            	25%{
+            		left: none;
+            	}
+            	50% {
+            		left: -500px;
+            	}
+            	75% {
+            		left: none;
+            	}
+            	100% {
+            		left: 500px;
+            	}
+            }
+                
+
+            }
+
+        </style>
+    </div>
+<div id="venus">
+	<style>
+		#venus {
+    			background-image: url(https://t4.ftcdn.net/jpg/01/95/38/71/360_F_195387192_nTpRC2usGI2MXWeY45PWuxPA7V4h7jgl.jpg);
+    			 width: 200px;
+                height: 200px;
+                position: relative;
+                margin-top: 50px;
+                margin: 0px auto;
+                border-radius: 50%;
+                box-shadow: 2px 0.5px 0.5px 2px;
+                animation-name: venus_scale,venus_rotate,venus_move;
+                animation-duration: 3s,3s,3s;
+                animation-iteration-count: infinite,infinite,infinite;
+                animation-timing-function: linear,linear,ease-in-out;
+                
+            }
+            @keyframes venus_scale {
+                0%  { 
+                    transform: scale(1);   
+                }
+                10% { 
+                    transform: scale(1.2);
+                    
+                }
+                20% { 
+                    transform: scale(1.5); 
+                     
+                }
+                30% { 
+                    transform: scale(2);
+                    
+                }
+                animation-timing-function:  ease-in-out;
+                40% {
+
+                    transform: scale(1.5);  
+                }  
+                50% { 
+                    transform: scale(1.2); 
+                }
+                60%{ 
+                    transform: scale(1); 
+                }
+                70%{ 
+                    transform: scale(0.75); 
+                }
+                80%{ 
+                    transform: scale(0.5); 
+                }
+                animation-timing-function:  ease-in-out;
+                90%{ 
+                    transform: scale(0.75); 
+                }
+                100%{ 
+                    transform: scale(1); 
+                }
+            }
+ 
+            @keyframes venus_rotate {
+                0% { 
+                	background-position: 0px; 
+                }
+                
+                100% { 
+                	background-position: 500px; 
+                }
+            }
+
+            @keyframes venus_move {
+            	0% {
+            		margin-top: -200px;
+            		left: 1000px;
+            	}
+            	25%{
+            		margin-top: -200px;
+            		left: none;
+            	}
+            	50% {
+            		margin-top: -200px;
+            		left: -1000px;
+            	}
+            	75% {
+            		margin-top: -200px;
+            		left: none;
+            	}
+            	100% {
+            		margin-top: -200px;
+            		left: 1000px;
+            	}
+            }
+	</style>
+</div>
+
+</body>
+</html>
